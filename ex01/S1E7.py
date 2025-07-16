@@ -16,19 +16,45 @@ class Baratheon(Character):
 		self.eyes = "brown"
 		self.hairs = "dark"
 
+	def __str__(self):
+		"""
+		Returns a value of the object in string
+		"""
+		return f"Vector: ('{self.family_name}', '{self.eyes}', '{self.hairs}')"
+
+	def __repr__(self):
+		"""
+		Returns a string (for development)
+		"""
+		return self.__str__()
+
 	def die(self):
 		"""
 		Change is_alive status to False
 		"""
 		self.is_alive = False
-		return 0
 
 
-# class Lannister(Character):
-    #your code here
-    # decorator
+class Lannister(Character):
+	"""
+	Lannister class
+	"""
+
+	def __init__(self, first_name, is_alive=True):
+		super().__init__(first_name, is_alive)
+		self.first_name = first_name
+		self.family_name = "Lannister',"
+		self.eyes = "blue"
+		self.hairs = "light"
+
+	def __str__(self):
+		return f"Vector: ('{self.family_name}', '{self.eyes}', '{self.hairs}')"
 
 
-# def create_lannister(your code here):/
-    #your code here
+	def __repr__(self):
+		return self.__str__()
+
+    	# decorator
+		def create_lannister(self, first_name, is_alive=True):
+			return
 
