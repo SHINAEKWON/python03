@@ -5,17 +5,18 @@ class Character(ABC):
     """
     Character Class
     """
-    def __init__(self, name, is_alive=True):
+    
+    @abstractmethod
+    def __init__(self, first_name, is_alive=True):
         """
         Constructeor for Character class
         Parameters:
-            name(str): Name of the character
+            first_name(str): first name of the character
             is_alive(bool): life status of the character (default: True)
         """
-        self.name = name
+        self.first_name = first_name
         self.is_alive = is_alive
 
-    @abstractmethod
     def die(self):
 
         pass
