@@ -2,6 +2,7 @@ from S1E7 import Baratheon, Lannister
 
 
 class King(Baratheon, Lannister):
+    """Representing the King family."""
 
     def set_eyes(self, color: str):
         self.eyes = color

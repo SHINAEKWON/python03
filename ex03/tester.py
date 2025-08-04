@@ -2,6 +2,7 @@ from ft_calculator import calculator
 
 
 def main():
+    """Main entrypoint of the calculator program"""
     v1 = calculator([0.0, 1.0, 2.0, 3.0, 4.0, 5.0])
     v1 + 5
     print("---")
@@ -11,9 +12,9 @@ def main():
     v3 = calculator([10.0, 15.0, 20.0])
     v3 - 5
     v3 / 5
-    print("---")
-    v4 = calculator([2])
-    v4 / 0
+    # print("---")
+    # v4 = calculator([2])
+    # v4 / 0
 
 
 if __name__ == "__main__":
